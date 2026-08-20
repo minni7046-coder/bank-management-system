@@ -1,0 +1,39 @@
+# Banking Management System - Python
+
+## 📌 Description
+
+The Banking Management System is a Python-based console application that allows users to perform basic banking operations such as depositing money, withdrawing money, and checking account balance.
+
+This project demonstrates Object-Oriented Programming (OOP) concepts in Python and includes unit testing using the unittest framework.
+
+---
+
+## ✨ Features
+
+- Create a bank account
+- Deposit money
+- Withdraw money
+- Check account balance
+- Input validation
+- Unit testing support
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3
+- Object-Oriented Programming (OOP)
+- unittest
+
+---
+
+## 📂 Project Structure
+
+```text
+Banking-Management-System/
+│
+├── banking_management_system.py
+├── test_banking_management_system.py
+├── README.md
+└── .gitignore
+```

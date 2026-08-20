@@ -1,0 +1,31 @@
+import unittest
+from banking_management_system import BankAccount
+
+
+class TestBankAccount(unittest.TestCase):
+
+    def setUp(self):
+        self.account = BankAccount("Test User", 1000)
+
+    def test_deposit(self):
+        self.account.deposit(500)
+        self.assertEqual(self.account.get_balance(), 1500)
+
+    def test_withdraw(self):
+        self.account.withdraw(300)
+        self.assertEqual(self.account.get_balance(), 700)
+
+    def test_insufficient_balance(self):
+        result = self.account.withdraw(2000)
+        self.assertFalse(result)
+
+    def test_invalid_deposit(self):
+        result = self.account.deposit(-100)
+        self.assertFalse(result)
+
+    def test_balance(self):
+        self.assertEqual(self.account.get_balance(), 1000)
+
+
+if __name__ == "__main__":
+    unittest.main()
